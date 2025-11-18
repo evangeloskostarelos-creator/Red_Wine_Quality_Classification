@@ -1,0 +1,14 @@
+name: pycaret_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - pip:
+    - pycaret[full]
+    # Ensure compatible versions of conflicting packages are installed
+    - joblib==1.2.0
+    - loky==3.1.0
+    - scikit-learn==1.2.0
